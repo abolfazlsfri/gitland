@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: iranyek;
+}
+@font-face {
+    font-family: iranyek;
+    src: url(../fonts/IRANYekanWebExtraBold.woff);
+}
+html {
+    overflow: hidden;
+    background: #252525;
+}
+.MainSection {
+    background-color: #252525;
+}
+.headcontainer {
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.contactUs {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    display: none;
+}
+
+.save {
+    cursor: pointer;
+    position: relative;
+    width: 70px;
+    z-index: 10;
+    filter: drop-shadow(0px 3px 3px black);
+    animation: beat 2s infinite alternate;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-left: 2px solid #00FF1A;
+    width: 145px;
+    font-size: 13px;
+    z-index: 100;
+}
+.menu .tamas {
+    border-left: none; 
+}
+.mainreg {
+    width: 200px;
+    height: 130%;
+    box-shadow: 5px 0 10px #0c0c0c;
+    transform: rotate(20deg);
+    position: absolute;
+    left: 30px;
+    top: -200px;
+    background-color: #171717;
+    z-index: 2;
+}
+.secondreg {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: clamp(400px , 80% , 1000px);
+    height: 150%;
+    box-shadow: 5px 0 10px #121212;
+    transform: rotate(20deg);
+    position: absolute;
+    left: 50px;
+    top: -200px;
+    background-color: #1d1d1d;
+    z-index: 0;
+}
+.aboutDiscription {
+    color: white;
+    margin-left: 230px;
+    margin-right: 40px;
+    margin-top: 50px;
+    direction: rtl;
+    font-size: 12px;
+    transform: rotate(-20deg);
+}
+.aboutLabel {
+    color: #00FF1A;
+    font-size: 30px;
+    transform: rotate(-20deg);
+    align-self: flex-end;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    margin-right: 50px;
+}
+.Icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    transform: rotate(-20deg);
+}
+.Icon img{
+    width: 30px;
+}
+.URL {
+    font-size: 13px;
+    color: #d40b6c;
+}
+.telIcon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transform: rotate(-20deg);
+    width: 160px;
+}
+.telIcon img{
+    width: 30px;
+}
+
+.telURL {
+    font-size: 14px;
+    color: #0077ff;
+    margin-left: 12px;
+}
+.whatsIcon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transform: rotate(-20deg);
+    width: 160px;
+}
+.whatsIcon img{
+    width: 30px;
+}
+.whatsURL {
+    font-size: 14px;
+    color: #00ff33;
+    margin-left: 12px;
+    text-wrap: nowrap;
+}
+#darbare {
+    border-left: 2px solid #FF087E;
+}
+#dokme {
+    border: 2px solid #00FF1A;
+    border-radius: 25px;
+    width: 120px;
+    height: 45px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #252525;
+    font-size: 13px;
+}
+#logo {
+    margin-left: -30px;
+    margin-bottom: 5px;
+}
+@keyframes arrive {
+    0% {
+    }
+    100% {
+        left: 50px;
+    }
+}
+@keyframes arriveSavebut {
+    0% {
+    }
+    100% {
+        left: 200px;
+    }
+}
+@keyframes out {
+    0% {
+        left: 50px;
+    }
+    100% {
+        left: -150px;
+    }
+}
+@keyframes outSavebut {
+    0% {
+        left: 200px;
+    }
+    100% {
+        left: 20px;
+    }
+}
+@keyframes beat {
+    0% {
+        transform: skewX(0deg) translateX(-10px);
+    }
+    100% {
+        transform: skewX(-10deg) translateX(0px);
+    }
+}
+@media (max-width: 590px)
+{
+    body {
+        overflow: hidden;
+        background-color: #252525;
+    }
+    .menu a{
+        display: none;
+        z-index: 100;
+    }
+    .aboutDiscription {
+        margin-right: 40px;
+    }
+    .contactUs {
+        display: block;
+        left: 0px;
+        z-index: 1;
+    }
+    .mainreg {
+        left: -170px;
+        z-index: 2;
+    }
+    .secondreg {
+        width: 100%;
+        left: 0px;
+        transform: rotate(0deg);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutDiscription {
+        margin-left: 70px;
+        margin-top: 0px;
+        margin-right: 40px;
+        transform: rotate(0deg);
+    }
+    .aboutDiscription:nth-child(2) {
+        display: none;
+        transform: rotate(0deg);
+    }
+    .aboutLabel {
+        margin-bottom: 20px;
+        transform: rotate(0deg);
+        margin-top: 0px;
+        margin-right: 60px;
+    }
+}
+@media (min-width: 590px) and (max-width: 820px) {
+    body {
+        overflow: hidden;
+        background-color: #252525;
+    }
+    .aboutLabel {
+        margin-bottom: 10px;
+        margin-top: 230px;
+    }
+    .aboutDiscription {
+        margin-right: 60px;
+    }
+    .contactUs {
+        display: block;
+        left: 20px;
+        z-index: 1;
+    }
+    .menu a {
+        width: 100px;
+        z-index: 100;
+    }
+    .menu {
+        z-index: 100;
+    }
+    .mainreg {
+        left: -150px;
+        z-index: 2;
+    }
+    .aboutDiscription {
+        margin-left: 80px;
+    }
+    .aboutLabel {
+        margin-bottom: 100px;
+    }
+}
