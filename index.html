@@ -106,8 +106,10 @@
         <form action="" class="logform">
             <div class="logLogo"><img src="img/logo.png" alt=""></div>
             <img src="img/fi-rr-cross-small.svg" id="f2" onclick="end()" alt="" style="scale: 1.4;">
-            <input type="text" class="logInput" placeholder = "نام کاربری" id="username">
-            <input type="text" class="logInput" placeholder = "رمز عبور" id="password">
+            <input type="text" class="logInput" placeholder = "نام کاربری" id="username" onkeydown="userValidation()">
+            <span class="usernameValidation">username should contain 12 character</span>
+            <input type="text" class="logInput" placeholder = "رمز عبور" id="password" onkeydown="passValidation()">
+            <span class="passwordValidation">password should contain 12 character</span>
             <a href="#">            
               <div class="logForget">رمزتان را فراموش کردید ؟</div>
             </a>

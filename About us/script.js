@@ -1,29 +1,29 @@
 //overlay login
-// var overlay = document.getElementById('f1')
-// var body = document.querySelector('body');
-// function over() {
-//     overlay.style.display = 'flex';
-//     body.style.overflow = 'hidden'
-// }
-// function end() {
-//     overlay.style.display = 'none';
-//     modal.style.display = 'none';
-//     body.style.overflow = 'auto';
-// }
+var overlay = document.getElementById('f1')
+var body = document.querySelector('body');
+function over() {
+    overlay.style.display = 'flex';
+    body.style.overflow = 'hidden'
+}
+function end() {
+    overlay.style.display = 'none';
+    modal.style.display = 'none';
+    body.style.overflow = 'auto';
+}
 // hamburger menu
-// var MobileMenuButton = document.getElementsByClassName('hambur');
-// var MoblieMenuOverlay = document.querySelector('.mobileMenu')
-// var MoblieMenuReturnOverlay = document.getElementById('f5');
+var MobileMenuButton = document.getElementsByClassName('hambur');
+var MoblieMenuOverlay = document.querySelector('.mobileMenu')
+var MoblieMenuReturnOverlay = document.getElementById('f5');
 
-// MobileMenuButton[0].onclick = function() {MobileMenu()}
-// MoblieMenuReturnOverlay.onclick = function() {MobileMenuReturn()}
+MobileMenuButton[0].onclick = function() {MobileMenu()}
+MoblieMenuReturnOverlay.onclick = function() {MobileMenuReturn()}
 
-// function MobileMenu() {
-//     MoblieMenuOverlay.style.display = 'flex';
-// }
-// function MobileMenuReturn(){
-//     MoblieMenuOverlay.style.display = 'none';
-// }
+function MobileMenu() {
+    MoblieMenuOverlay.style.display = 'flex';
+}
+function MobileMenuReturn(){
+    MoblieMenuOverlay.style.display = 'none';
+}
 
 // taghire safhe be aza
 // var azaPage = document.getElementById('aza1') ;

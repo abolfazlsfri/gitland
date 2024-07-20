@@ -70,7 +70,30 @@ function dataVarifiction(){
 }
 
 
+var userError = document.querySelector('.usernameValidation');
+var passError = document.querySelector('.passwordValidation');
 
 
 
+function userValidation(){
+    if (usernameInput.value.length <= 12)
+        {
+            userError.style.display = 'block'
+            userError.style.color = 'red'
+            userError.style.fontSize = '12px'
+        }
+        else {
+            userError.style.display = 'none'
 
+        }
+}
+function passValidation(){
+    if (passwordInput.value.length <= 8)
+        {
+            passError.style.display = 'block'
+        }
+        else {
+            passError.style.display = 'none'
+        }
+    
+}

@@ -136,6 +136,9 @@ body {
 .logButton:hover {
     background-color: #FF087E;
 }
+.usernameValidation ,.passwordValidation {
+    display: none;
+}
 a {
     text-decoration: none;
     color: #ffffff;
@@ -214,6 +217,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.usernameValidation {
+    margin-top: 10px;
 }
 .menu {
     display: flex;
@@ -694,6 +700,9 @@ a {
         font-size: 10px;
         justify-self: flex-end;
     }
+    .logForget {
+        margin-top: 20px;
+    }
     .title {
         min-height: 50vh;
         justify-content: center;
@@ -850,6 +859,9 @@ a {
         width: 100px;
         height: 40px;
         font-size: 10px;
+    }
+    .logForget {
+        margin-top: 50px;
     }
     .title {
         min-height: 60vh;
